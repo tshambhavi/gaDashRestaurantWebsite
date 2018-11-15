@@ -1,0 +1,1 @@
+This repository is based on the project suggestions available at <a href="https://dash.generalassemb.ly/projects" target="_blank">General Assembly Dash</a>. I coded the website to practice using CSS techniques.
