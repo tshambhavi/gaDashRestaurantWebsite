@@ -247,6 +247,7 @@ header {
   top: 0;
   left: 0;
   right: 0;
+  -webkit-transition: all 0.4s ease-out;
   transition: all 0.4s ease-out;
   z-index: 100;
 }
@@ -320,6 +321,7 @@ button span {
   -ms-flex-item-align: center;
   align-self: center;
   background-color: rgba(191, 129, 6, 0.9);
+  -webkit-box-shadow: 0 1px 5px rgba(0, 0, 0, 0.25);
   box-shadow: 0 1px 5px rgba(0, 0, 0, 0.25);
   cursor: pointer;
   pointer-events: auto;
@@ -361,6 +363,7 @@ button span {
   transition: all 0.2s ease-in-out;
 }
 .close-button {
+  -webkit-box-shadow: none;
   box-shadow: none;
 }
 .close-button .bars {
@@ -520,7 +523,12 @@ section h3 {
 /* The Menu Section */
 #menu {
   background-color: #f0e5a0;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
   flex-direction: column;
 }
 .menu-cover {
@@ -543,6 +551,7 @@ section h3 {
   top: 1.5em;
   left: 0.5em;
   left: 50%;
+  -webkit-transform: translateX(-50%);
   transform: translateX(-50%);
   padding: 0.75em;
   z-index: 2;
@@ -569,7 +578,11 @@ section h3 {
   width: 50%;
 }
 .menu-list__row {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
   position: relative;
 }
@@ -596,6 +609,7 @@ section h3 {
   width: 100%;
   height: 2px;
   background-color: #fff;
+  -webkit-transform: scaleX(0.3);
   transform: scaleX(0.3);
 }
 .menu-list__link {
@@ -649,7 +663,12 @@ section h3 {
   margin-right: 8px;
 }
 .location-hours {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
   flex-direction: column;
 }
 .location-hours h3 {
@@ -751,7 +770,12 @@ Media queries
     text-align: center;
   }
   .location-hours {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
     flex-direction: row;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
     justify-content: center;
   }
   .location {
@@ -793,8 +817,14 @@ Media queries
     width: 110%;
     margin-top: 3.75em;
     margin-left: -1.4em;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
     justify-content: center;
   }
   .menu-list {
@@ -815,8 +845,14 @@ Media queries
 @media screen and (max-width: 424px) {
   .drinks,
   .eats {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
     justify-content: center;
   }
   .menu-title-wrapper {
